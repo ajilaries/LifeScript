@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">LifeScript</string>
+    <string name="lifescript">LifeScript</string>
+    <string name="write_your_journal_entry_here">Write your journal entry here...</string>
+    <string name="save_entry">Save Entry</string>
+</resources>
