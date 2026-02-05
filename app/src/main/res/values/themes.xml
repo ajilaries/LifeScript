@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Main Application Theme (Material 3) -->
+    <style name="Theme.LifeScript" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
 
-    <style name="Theme.LifeScript" parent="android:Theme.Material.Light.NoActionBar" />
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/primary_variant</item>
+
+        <!-- Background and surface colors -->
+        <item name="android:windowBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+    </style>
 </resources>

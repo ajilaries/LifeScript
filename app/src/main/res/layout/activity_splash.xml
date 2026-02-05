@@ -4,8 +4,8 @@
     android:id="@+id/splashLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_launcher_background"
-    tools:context=".SplashActivity">
+    android:background="@drawable/bg_gradient"
+    tools:context=".activities.SplashActivity">
 
     <!-- App Logo -->
     <ImageView
@@ -13,8 +13,8 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/ic_launcher_background"
-        android:contentDescription="LifeScript Logo"
+        android.src="@drawable/app_logo"
+        android:contentDescription="@string/app_name"
         android:scaleType="centerInside" />
 
     <!-- App Name -->
@@ -25,9 +25,9 @@
         android:layout_below="@id/logoImage"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:text="LifeScript"
-        android:textSize="28sp"
-        android:textColor="@color/primaryText"
+        android:text="@string/app_name"
+        android:textSize="32sp"
+        android:textColor="@android:color/white"
         android:textStyle="bold" />
 
 </RelativeLayout>

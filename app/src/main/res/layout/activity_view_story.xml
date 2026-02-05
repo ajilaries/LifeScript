@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="24dp">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_story"
+        android:textSize="28sp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your memories, woven into a narrative."
+        android:textSize="14sp"
+        android:textColor="@color/secondaryText"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Generate Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGenerateStory"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/generate_my_story"
+        android:backgroundTint="@color/primary"
+        android:textColor="@color/on_primary"
+        app:cornerRadius="12dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Story Content / Loading -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/card_background"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/divider">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvStoryContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/primaryText"
+                    android:lineSpacingExtra="6dp"
+                    android:fontFamily="serif" />
+            </ScrollView>
+        </com.google.android.material.card.MaterialCardView>
+
+    </FrameLayout>
+
+</LinearLayout>
