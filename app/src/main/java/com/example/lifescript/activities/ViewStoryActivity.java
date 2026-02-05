@@ -39,7 +39,7 @@ public class ViewStoryActivity extends AppCompatActivity {
     private SessionManager sessionManager;
 
     // Gemini API Key
-    private static final String GEMINI_API_KEY = "AIzaSyBi06PmfJs9GjapYqzd2hoNUgBJ61GTxwM";
+    private static final String GEMINI_API_KEY = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
